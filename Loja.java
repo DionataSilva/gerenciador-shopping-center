@@ -39,6 +39,9 @@ public class Loja {
         this.salarioBaseFuncionario = salarioBaseFuncionario;
     }
 
+    public Loja(String e7, int i, int i1, Endereco e1, Data d1, int i2) {
+    }
+
     // Getters
     public String getNome() {
         return nome;
@@ -92,7 +95,8 @@ public class Loja {
                    fundacao: %s,
                    gastosComSalario: %s
                    tamanhoDaLoja: %s
-               }""", nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, dataFundacao, gastosComSalario(), tamanhoDaLoja());
+                   Endereco: %s
+               }""", nome, quantidadeFuncionarios, salarioBaseFuncionario, endereco, dataFundacao, gastosComSalario(), tamanhoDaLoja(), endereco);
     }
 
     // Método que calcula os gastos com salário
@@ -112,5 +116,17 @@ public class Loja {
         } else {
             return 'G';
         }
+    }
+
+    public Object[] getEstoqueProdutos() {
+    }
+
+    public void imprimeProdutos() {
+    }
+
+    public boolean insereProduto(Produto pipoca_doce) {
+    }
+
+    public boolean removeProduto(String pipoca_salgada) {
     }
 }
